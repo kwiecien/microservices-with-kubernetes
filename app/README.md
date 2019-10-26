@@ -51,3 +51,8 @@ curl --cacert ./ca.pem -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6Ikp
 ```
 <h1>Hello</h1>
 ```
+
+# Notes
+ - https://ssh.cloud.google.com/cloudshell/editor
+ - https://cloud.google.com/shell/docs/quickstart
+ 
