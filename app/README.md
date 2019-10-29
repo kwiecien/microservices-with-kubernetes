@@ -58,4 +58,12 @@ curl --cacert ./ca.pem -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6Ikp
  - `gcloud config set project <project-id>`
  - `gcloud compute ssh ubuntu`
 
- 
+# Docker
+ - sudo docker inspect -f '{{.Id}} -  {{.Name}} - {{.NetworkSettings.IPAddress }}' $(sudo docker ps -aq)
+ - sudo docker stop $(sudo docker ps -aq)
+ - sudo docker inspect <container name or cid>
+ - CID=$(sudo docker run -d monolith:1.0.0)
+ - CIP=$(sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' ${CID})
+ - sudo docker images
+ - sudo docker tag auth:1.0.0 kwiecien/auth:1.0.0
+ - sudo docker push kwiecien/auth:1.0.0
