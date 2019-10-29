@@ -53,6 +53,9 @@ curl --cacert ./ca.pem -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6Ikp
 ```
 
 # Notes
- - https://ssh.cloud.google.com/cloudshell/editor
  - https://cloud.google.com/shell/docs/quickstart
+ - https://ssh.cloud.google.com/cloudshell/editor
+ - `gcloud config set project <project-id>`
+ - `gcloud compute ssh ubuntu`
+
  
