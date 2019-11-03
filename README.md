@@ -25,3 +25,12 @@ App is an example [12 Factor application](http://12factor.net/) that we'll be us
   * [Docker](https://docs.docker.com)
   * [etcd](https://coreos.com/docs/distributed-configuration/getting-started-with-etcd)
   * [nginx](http://nginx.org)
+
+# Kubernetes - notes
+ * gcloud config set compute/zone europe-west4-a
+ * gcloud container clusters create k0
+ * To inspect the contents of your cluster, go to: https://console.cloud.google.com/kubernetes/workload_/gcloud/europe-west4-a/k0?project=<PROJECT-ID>
+ * kubectl run nginx --image=nginx:1.10.0
+ * kubectl get pods
+ * kubectl expose deployment nginx --port 80 --type LoadBalancer
+ * 
