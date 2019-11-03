@@ -33,4 +33,5 @@ App is an example [12 Factor application](http://12factor.net/) that we'll be us
  * kubectl run nginx --image=nginx:1.10.0
  * kubectl get pods
  * kubectl expose deployment nginx --port 80 --type LoadBalancer
- * 
+ * kubectl create -f pods/monolith.yaml
+ * kubectl describe pods monolith
