@@ -35,3 +35,8 @@ App is an example [12 Factor application](http://12factor.net/) that we'll be us
  * kubectl expose deployment nginx --port 80 --type LoadBalancer
  * kubectl create -f pods/monolith.yaml
  * kubectl describe pods monolith
+ * kubectl port-forward monolith 10080:80
+ * curl http://127.0.0.1:10080
+ * kubectl logs -f monolith
+ * kubectl exec monolith --stdin --tty -c monolith /bin/sh
+ * ping -c 3 google.com
