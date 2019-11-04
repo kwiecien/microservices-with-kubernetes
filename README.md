@@ -40,3 +40,6 @@ App is an example [12 Factor application](http://12factor.net/) that we'll be us
  * kubectl logs -f monolith
  * kubectl exec monolith --stdin --tty -c monolith /bin/sh
  * ping -c 3 google.com
+ * kubectl create -f pods/healthy-monolith.yaml
+ * kubectl describe pods healthy-monolith | grep "Readiness"
+ * kubectl describe pods healthy-monolith | grep "Liveness"
