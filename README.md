@@ -43,3 +43,8 @@ App is an example [12 Factor application](http://12factor.net/) that we'll be us
  * kubectl create -f pods/healthy-monolith.yaml
  * kubectl describe pods healthy-monolith | grep "Readiness"
  * kubectl describe pods healthy-monolith | grep "Liveness"
+ * kubectl create secret generic tls-certs --from-file=tls/
+ * kubectl describe secrets tls-certs
+ * kubectl describe secrets tls-certs
+ * kubectl describe configmap nginx-proxy-conf
+ 
