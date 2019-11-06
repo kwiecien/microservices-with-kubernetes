@@ -47,4 +47,9 @@ App is an example [12 Factor application](http://12factor.net/) that we'll be us
  * kubectl describe secrets tls-certs
  * kubectl create configmap nginx-proxy-conf --from-file=nginx/proxy.conf
  * kubectl describe configmap nginx-proxy-conf
+ * kubectl create -f pods/secure-monolith.yaml
+ * kubectl get pods secure-monolith
+ * kubectl port-forward secure-monolith 10443:443
+ * curl --cacert tls/ca.pem https://127.0.0.1:10443
+ * kubectl logs -c nginx secure-monolith
  
