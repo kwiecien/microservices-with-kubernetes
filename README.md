@@ -45,6 +45,6 @@ App is an example [12 Factor application](http://12factor.net/) that we'll be us
  * kubectl describe pods healthy-monolith | grep "Liveness"
  * kubectl create secret generic tls-certs --from-file=tls/
  * kubectl describe secrets tls-certs
- * kubectl describe secrets tls-certs
+ * kubectl create configmap nginx-proxy-conf --from-file=nginx/proxy.conf
  * kubectl describe configmap nginx-proxy-conf
  
