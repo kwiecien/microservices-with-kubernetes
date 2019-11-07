@@ -82,3 +82,8 @@ App is an example [12 Factor application](http://12factor.net/) that we'll be us
  * kubectl describe deployments hello
  * kubectl get services # EXTERNAL_IP
  * curl -k https://34.90.235.74
+ * vim deployments/auth.yaml # spec template spec containers image: 1 -> 2
+ * kubectl apply -f deployments/auth.yaml
+ * kubectl describe deployments auth # RollingUpdateStrategy:  1 max unavailable, 1 max surge
+ * kubectl get pods
+ * kubectl describe pods auth-597b75bdfd-sqp4r
