@@ -56,4 +56,11 @@ App is an example [12 Factor application](http://12factor.net/) that we'll be us
  * gcloud compute firewall-rules create allow-monolith-nodeport --allow=tcp:31000
  * gcloud compute instances list # EXTERNAL_IP 34.90.203.207
  * curl -k https://34.90.203.207
+ * kubectl get pods -l "app=monolith"
+ * kubectl get pods -l "app=monolith,secure=enabled"
+ * kubectl describe pods secure-monolith | grep Labels
+ * kubectl label pods secure-monolith "secure=enabled"
+ * kubectl describe pods secure-monolith | grep Labels -A1
+ * kubectl describe services monolith | grep Endpoints
+ * curl -k https://34.90.203.207:31000
  
