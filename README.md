@@ -52,4 +52,8 @@ App is an example [12 Factor application](http://12factor.net/) that we'll be us
  * kubectl port-forward secure-monolith 10443:443
  * curl --cacert tls/ca.pem https://127.0.0.1:10443
  * kubectl logs -c nginx secure-monolith
+ * kubectl create -f services/monolith.yaml
+ * gcloud compute firewall-rules create allow-monolith-nodeport --allow=tcp:31000
+ * gcloud compute instances list # EXTERNAL_IP 34.90.203.207
+ * curl -k https://34.90.203.207
  
