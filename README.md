@@ -63,4 +63,13 @@ App is an example [12 Factor application](http://12factor.net/) that we'll be us
  * kubectl describe pods secure-monolith | grep Labels -A1
  * kubectl describe services monolith | grep Endpoints
  * curl -k https://34.90.203.207:31000
- 
+ * kubectl create -f deployments/auth.yaml
+ * kubectl describe deployments auth
+ * kubectl create -f services/auth.yaml
+ * kubectl create -f deployments/hello.yaml
+ * kubectl create -f services/hello.yaml
+ * kubectl create configmap nginx-frontend-conf --from-file=nginx/frontend.conf
+ * kubectl create -f deployments/frontend.yaml
+ * kubectl create -f services/frontend.yaml
+ * kubectl get services frontend # EXTERNAL_IP
+ * curl -k https://34.90.235.74
