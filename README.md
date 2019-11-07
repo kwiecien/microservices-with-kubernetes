@@ -73,3 +73,12 @@ App is an example [12 Factor application](http://12factor.net/) that we'll be us
  * kubectl create -f services/frontend.yaml
  * kubectl get services frontend # EXTERNAL_IP
  * curl -k https://34.90.235.74
+ * kubectl get replicasets
+ * kubectl get pods -l "app=hello,track=stable"
+ * vim deployments/hello.yaml # i -> replicas: 3; ESC, :wq 
+ * kubectl apply -f deployments/hello.yaml
+ * kubectl get replicasets
+ * kubectl get pods
+ * kubectl describe deployments hello
+ * kubectl get services # EXTERNAL_IP
+ * curl -k https://34.90.235.74
